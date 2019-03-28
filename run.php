@@ -37,7 +37,7 @@ if (empty($tweetid)) { die(); }
 
 file_put_contents('lastid', $tweetid); //Write down the last tweet we saved so we do not interact with it on every run
 
-if ($jsonoutput['statuses'][0]['user']['name'] == "BannedUser123") { die(); } //Quickly written examply of blocking a user from being retweeted
+if ($jsonoutput['statuses'][0]['user']['screen_name'] == "BannedUser123") { die(); } //Quickly written examply of blocking a user from being retweeted
 
 /** Retweet ! **/
 
